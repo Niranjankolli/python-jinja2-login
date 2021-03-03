@@ -1,0 +1,16 @@
+
+Showing logs for build [32mmeta-niranjankolli-python-jinja-t5wsg-2[0m stage [32mmeta-pipeline[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1614778753.3828447,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-niranjankolli-python-jinja-t5wsg-2[0m stage [32mmeta-pipeline[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mmeta-niranjankolli-python-jinja-t5wsg-2[0m stage [32mmeta-pipeline[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mmeta-niranjankolli-python-jinja-t5wsg-2[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-niranjankolli-python-jinja-t5wsg-6mqpq[0m
+{"level":"error","ts":1614778760.0706203,"caller":"git/git.go:41","msg":"Error running git [fetch --recurse-submodules=yes --depth=1 origin master]: exit status 128\nfatal: couldn't find remote ref master\n","stacktrace":"github.com/tektoncd/pipeline/pkg/git.run\n\tgithub.com/tektoncd/pipeline/pkg/git/git.go:41\ngithub.com/tektoncd/pipeline/pkg/git.Fetch\n\tgithub.com/tektoncd/pipeline/pkg/git/git.go:93\nmain.main\n\tgithub.com/tektoncd/pipeline/cmd/git-init/main.go:53\nruntime.main\n\truntime/proc.go:203"}
+{"level":"error","ts":1614778760.2615283,"caller":"git/git.go:41","msg":"Error running git [pull --recurse-submodules=yes origin]: exit status 1\nFrom https://github.com/*************/python-jinja2-login\n * [new branch]      main       -> origin/main\nYou asked to pull from the remote 'origin', but did not specify\na branch. Because this is not the default configured remote\nfor your current branch, you must specify a branch on the command line.\n","stacktrace":"github.com/tektoncd/pipeline/pkg/git.run\n\tgithub.com/tektoncd/pipeline/pkg/git/git.go:41\ngithub.com/tektoncd/pipeline/pkg/git.Fetch\n\tgithub.com/tektoncd/pipeline/pkg/git/git.go:96\nmain.main\n\tgithub.com/tektoncd/pipeline/cmd/git-init/main.go:53\nruntime.main\n\truntime/proc.go:203"}
+{"level":"warn","ts":1614778760.2615893,"caller":"git/git.go:97","msg":"Failed to pull origin : exit status 1"}
+{"level":"error","ts":1614778760.2627609,"caller":"git/git.go:41","msg":"Error running git [checkout master]: exit status 1\nerror: pathspec 'master' did not match any file(s) known to git\n","stacktrace":"github.com/tektoncd/pipeline/pkg/git.run\n\tgithub.com/tektoncd/pipeline/pkg/git/git.go:41\ngithub.com/tektoncd/pipeline/pkg/git.Fetch\n\tgithub.com/tektoncd/pipeline/pkg/git/git.go:99\nmain.main\n\tgithub.com/tektoncd/pipeline/cmd/git-init/main.go:53\nruntime.main\n\truntime/proc.go:203"}
+{"level":"fatal","ts":1614778760.2628005,"caller":"git-init/main.go:54","msg":"Error fetching git repository: exit status 1","stacktrace":"main.main\n\tgithub.com/tektoncd/pipeline/cmd/git-init/main.go:54\nruntime.main\n\truntime/proc.go:203"}
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-git-source-meta-niranjankolli-python-jinja-t5wsg-6mqpq'. The execution of the pipeline has stopped.[0m
