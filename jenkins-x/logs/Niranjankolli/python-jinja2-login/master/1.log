@@ -1,0 +1,153 @@
+
+Showing logs for build [32mniranjankolli-python-jinja2-log-grttp-1[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1614785647.3954573,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mniranjankolli-python-jinja2-log-grttp-1[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mniranjankolli-python-jinja2-log-grttp-1[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mniranjankolli-python-jinja2-log-grttp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-niranjankolli-python-jinja2-log-grttp-b8j8r[0m
+{"level":"info","ts":1614785664.6727946,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*************/python-jinja2-login.git @ v0.0.3 in path /workspace/source"}
+{"level":"warn","ts":1614785664.6728823,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1614785664.7026317,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32mniranjankolli-python-jinja2-log-grttp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mniranjankolli-python-jinja2-log-grttp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mniranjankolli-python-jinja2-log-grttp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mniranjankolli-python-jinja2-log-grttp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-python-unittest[0m
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+
+Showing logs for build [32mniranjankolli-python-jinja2-log-grttp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0000] Retrieving image manifest python:3.8         
+[36mINFO[0m[0001] Retrieving image manifest python:3.8         
+[36mINFO[0m[0001] Built cross stage deps: map[]                
+[36mINFO[0m[0001] Retrieving image manifest python:3.8         
+[36mINFO[0m[0001] Retrieving image manifest python:3.8         
+[36mINFO[0m[0001] Executing 0 build triggers                   
+[36mINFO[0m[0001] Checking for cached layer 244418354921.dkr.ecr.us-east-2.amazonaws.com/todo/cache:adaf01002fb4b325aae8b63a9417ecea8182b27f198a50cb2cfcaf8f3dae6452... 
+[36mINFO[0m[0002] No cached layer found for cmd RUN apt-get install -y git 
+[36mINFO[0m[0002] cmd: EXPOSE                                  
+[36mINFO[0m[0002] Adding exposed port: 4000/tcp                
+[36mINFO[0m[0002] Unpacking rootfs as cmd RUN apt-get install -y git requires it. 
+[36mINFO[0m[0016] RUN apt-get install -y git                   
+[36mINFO[0m[0016] Taking snapshot of full filesystem...        
+[36mINFO[0m[0020] Resolving 31170 paths                        
+[36mINFO[0m[0022] cmd: /bin/sh                                 
+[36mINFO[0m[0022] args: [-c apt-get install -y git]            
+[36mINFO[0m[0022] Running: [/bin/sh -c apt-get install -y git] 
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git is already the newest version (1:2.20.1-2+deb10u3).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+[36mINFO[0m[0022] Taking snapshot of full filesystem...        
+[36mINFO[0m[0022] Resolving 31171 paths                        
+[36mINFO[0m[0025] Pushing layer 244418354921.dkr.ecr.us-east-2.amazonaws.com/todo/cache:adaf01002fb4b325aae8b63a9417ecea8182b27f198a50cb2cfcaf8f3dae6452 to cache now 
+[36mINFO[0m[0025] RUN mkdir /script                            
+[36mINFO[0m[0025] cmd: /bin/sh                                 
+[36mINFO[0m[0025] args: [-c mkdir /script]                     
+[36mINFO[0m[0025] Running: [/bin/sh -c mkdir /script]          
+[36mINFO[0m[0025] Taking snapshot of full filesystem...        
+[36mINFO[0m[0025] Resolving 31172 paths                        
+[36mINFO[0m[0027] Pushing layer 244418354921.dkr.ecr.us-east-2.amazonaws.com/todo/cache:2756c4a85bff3df791e4e46e249e0038fa72c793e1995aad46bf636e348ae3cd to cache now 
+[36mINFO[0m[0027] WORKDIR /script                              
+[36mINFO[0m[0027] cmd: workdir                                 
+[36mINFO[0m[0027] Changed working directory to /script         
+[36mINFO[0m[0027] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0027] RUN git clone -b main https://github.com/kodekolli/python-jinja2-login.git 
+[36mINFO[0m[0027] cmd: /bin/sh                                 
+[36mINFO[0m[0027] args: [-c git clone -b main https://github.com/kodekolli/python-jinja2-login.git] 
+[36mINFO[0m[0027] Running: [/bin/sh -c git clone -b main https://github.com/kodekolli/python-jinja2-login.git] 
+Cloning into 'python-jinja2-login'...
+[36mINFO[0m[0027] Taking snapshot of full filesystem...        
+[36mINFO[0m[0027] Resolving 31384 paths                        
+[36mINFO[0m[0029] WORKDIR /script/python-jinja2-login          
+[36mINFO[0m[0029] cmd: workdir                                 
+[36mINFO[0m[0029] Changed working directory to /script/python-jinja2-login 
+[36mINFO[0m[0029] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0029] RUN pip install -r requirements.txt          
+[36mINFO[0m[0029] cmd: /bin/sh                                 
+[36mINFO[0m[0029] args: [-c pip install -r requirements.txt]   
+[36mINFO[0m[0029] Running: [/bin/sh -c pip install -r requirements.txt] 
+[36mINFO[0m[0029] Pushing layer 244418354921.dkr.ecr.us-east-2.amazonaws.com/todo/cache:1f035bd8b13e0970e25de55ba74614f6dd51edf5768f434e77b53eea50c92490 to cache now 
+Collecting Flask==1.1.1
+  Downloading Flask-1.1.1-py2.py3-none-any.whl (94 kB)
+Collecting Jinja2==2.11.1
+  Downloading Jinja2-2.11.1-py2.py3-none-any.whl (126 kB)
+Collecting click>=5.1
+  Downloading click-7.1.2-py2.py3-none-any.whl (82 kB)
+Collecting Werkzeug>=0.15
+  Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+Collecting itsdangerous>=0.24
+  Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp38-cp38-manylinux2010_x86_64.whl (32 kB)
+Installing collected packages: MarkupSafe, Werkzeug, Jinja2, itsdangerous, click, Flask
+Successfully installed Flask-1.1.1 Jinja2-2.11.1 MarkupSafe-1.1.1 Werkzeug-1.0.1 click-7.1.2 itsdangerous-1.1.0
+[36mINFO[0m[0032] Taking snapshot of full filesystem...        
+[36mINFO[0m[0032] Resolving 32247 paths                        
+[36mINFO[0m[0034] EXPOSE 4000                                  
+[36mINFO[0m[0034] cmd: EXPOSE                                  
+[36mINFO[0m[0034] Adding exposed port: 4000/tcp                
+[36mINFO[0m[0034] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0034] ENTRYPOINT [ "python" ]                      
+[36mINFO[0m[0034] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0034] CMD [ "app.py" ]                             
+[36mINFO[0m[0034] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0034] Pushing layer 244418354921.dkr.ecr.us-east-2.amazonaws.com/todo/cache:ce0b161544ece34641a48095e4886b9ed6d9e64a82652bd58700e52751046b82 to cache now 
+[33mWARN[0m[0035] error uploading layer to cache: failed to push to destination 244418354921.dkr.ecr.us-east-2.amazonaws.com/todo/cache:adaf01002fb4b325aae8b63a9417ecea8182b27f198a50cb2cfcaf8f3dae6452: POST https://244418354921.dkr.ecr.us-east-2.amazonaws.com/v2/todo/cache/blobs/uploads/: NAME_UNKNOWN: The repository with name 'todo/cache' does not exist in the registry with id '244418354921' 
+
+Showing logs for build [32mniranjankolli-python-jinja2-log-grttp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mniranjankolli-python-jinja2-log-grttp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/python-jinja2-login to an unshallow repository
+Generating change log from git ref 000441501bf77fdb4b84e796a7d9d6ada4018cec => 3797ad2ee53ee7753928dff746bc62aa660505c5
+Associating user root in users.jenkins.io with email niranjankolly@gmail.com to git GitProvider user with login root-0 as emails match
+Adding label jenkins.io/git-github-userid=root-0 to user root in users.jenkins.io
+Associating user root in users.jenkins.io with email niranjankolly@gmail.com to git GitProvider user with login root-0 as emails match
+Adding label jenkins.io/git-github-userid=root-0 to user root in users.jenkins.io
+Finding issues in commit messages using git format
+WARNING: No release found for *************/python-jinja2-login and tag v0.0.3 so creating a new release
+Updated the release information at https://github.com/*************/python-jinja2-login/releases/tag/v0.0.3
+generated: /workspace/source/charts/python-jinja2-login/templates/release.yaml
+Created Release python-jinja2-login-0-0-3 resource in namespace **
+Updating PipelineActivity niranjankolli-python-jinja2-login-master-1 with version 0.0.3
+Updated PipelineActivities niranjankolli-python-jinja2-login-master-1 with release notes URL: https://github.com/*************/python-jinja2-login/releases/tag/v0.0.3
+
+Showing logs for build [32mniranjankolli-python-jinja2-log-grttp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+WARNING: No secrets found on "helm/repos" due: reading the secret "helm/repos" from vault: no secret "helm/repos" not found in vault
+Read credentials for https://storage.googleapis.com/chartmuseum.jenkins-x.io from vault helm/repos
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+WARNING: No secrets found on "helm/repos" due: reading the secret "helm/repos" from vault: no secret "helm/repos" not found in vault
+Read credentials for http://jenkins-x-chartmuseum:8080 from vault helm/repos
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file python-jinja2-login-0.0.3.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32mniranjankolli-python-jinja2-log-grttp-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app python-jinja2-login version 0.0.3 to namespace **-staging
+Created Pull Request: https://github.com/*************/environment-kodekolli-**-k8s-staging/pull/6
+Added label updatebot to Pull Request https://github.com/*************/environment-kodekolli-**-k8s-staging/pull/6
+got git provider status pending from PR https://github.com/*************/environment-kodekolli-**-k8s-staging/pull/6
+got git provider status pending from PR https://github.com/*************/environment-kodekolli-**-k8s-staging/pull/6
+WARNING: Failed to merge the Pull Request https://github.com/*************/environment-kodekolli-**-k8s-staging/pull/6 due to PUT https://api.github.com/repos/*************/environment-kodekolli-**-k8s-staging/pulls/6/merge: 405 Base branch was modified. Review and try the merge again. [] maybe I don't have karma?
+Pull Request https://github.com/*************/environment-kodekolli-**-k8s-staging/pull/6 is merged at sha 85915c146875b0d627a07cbe7fadf85f60fcfdb4
+Pull Request merged but we are not waiting for the update pipeline to complete!
